@@ -41,3 +41,4 @@ As you can see model works pretty well, and only gets confused with cartoon imag
 
 ![Results](https://raw.githubusercontent.com/milsun/caricature-vs-cartoon-classifier/master/images/results.png)
 # caricature-vs-cartoon-classifier
+# caricature-vs-cartoon-classifier
