@@ -41,8 +41,8 @@ pip install matplotlib
 ```
 def load_image(filename):
     img = image.load_img(filename, target_size=(224, 224))
-    img_tensor = image.img_to_array(img)                    # (height, width, channels)
-    img_tensor = np.expand_dims(img_tensor, axis=0)         # (1, height, width, channels), add a dimension because the model expects this shape: (batch_size, height, width, channels)
+    img_tensor = image.img_to_array(img)             
+    img_tensor = np.expand_dims(img_tensor, axis=0)       
     img_tensor /= 255. 
 
     return img_tensor
@@ -55,7 +55,7 @@ threshold = 0.2
 if model.predict(load_image(img_name))[0][0] < threshold:
 	print('Caricature')
 else:
-    print('Cartoon')
+	print('Cartoon')
 
 ```
 
